@@ -1,0 +1,151 @@
+body {
+    background-color:#ebebeb
+}
+
+.required_field:after {
+  content:" *";
+  color: red;
+}
+
+.v--default-css .c-toast {
+  border: 1px solid rgba(0,0,0,.1)!important;
+  background-clip: padding-box!important;
+}
+
+.v--default-css .c-toast--success {
+  background-color: #39a752!important;
+  
+}
+
+/** Refonte du multiselect **/
+
+.multiselect-tag {
+    background: #8b5cf6!important;
+}
+
+.multiselect.is-active {
+    box-shadow: none!important;
+}
+
+.multiselect {
+    line-height: 1.9!important;
+    font-size:inherit!important;
+    min-height: inherit!important;
+}
+
+.modal-bg-groups{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #00000001;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-groups {
+    background: #fff;
+    min-height: 200px;
+    max-height: 70vh;
+    width: 400px;
+    max-width: 95vw;
+    padding: 7px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #635994;
+}
+
+.modal-content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 186px;
+    max-height: calc(70vh - 14px);
+}
+
+.modal-close {
+    top: -8px;
+    right: -8px;
+    position: absolute;
+    background: #fff;
+    padding: 1px;
+    border-radius: 50%;
+    border: 2px solid #635994;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .modal-content {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .modal-content::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+  }
+
+.dnone {
+    display: none;
+}
+
+.cpointer {
+    cursor: pointer;
+}
+
+.modal-container {
+  z-index:200!important;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(17,24,39);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(17,24,39);
+    border-radius: 4px;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+  }
+
+  .table-content {
+    height: calc(90vh - 139px);
+  }
+
+  .multiselect-option.is-selected.is-pointed {
+    background: #8b5cf6!important;
+    color: var(--ms-option-color-selected-pointed,#fff);
+  }
+  
+  .multiselect-option.is-selected {
+    background: #8b5cf6!important;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
